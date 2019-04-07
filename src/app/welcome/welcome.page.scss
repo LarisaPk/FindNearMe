@@ -4,12 +4,25 @@ ion-slides {
     height: 100% !important;
     width:100% ;
 
-	ion-slide { // put all elements in one column and align to centre
+// put all elements in one column and align to centre
+	ion-slide { 
 		align-items: center;
         text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1em;
-	}
-}//test
+        padding: 3em; //added padding here, it looks a bit better with it
+    }
+}
+//Image background
+.bg-image {
+    background-image: url('../../assets/imgs/s2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+// Swipe small icons color in white.
+ion-slides {
+    --bullet-background: white;
+    --bullet-background-active: white;
+ }
