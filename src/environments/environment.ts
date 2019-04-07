@@ -1,9 +1,19 @@
+// Larisa Pyykölä, student number 1702357
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+// added configuration fot the database
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyBkjnEL-E74PXsWWwLWJ2tGxAUbFUnE2mo",
+    authDomain: "findnearme-2ca73.firebaseapp.com",
+    databaseURL: "https://findnearme-2ca73.firebaseio.com",
+    projectId: "findnearme-2ca73",
+    storageBucket: "findnearme-2ca73.appspot.com",
+    messagingSenderId: "525089147585"
+  }
 };
 
 /*

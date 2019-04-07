@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login_register" padding text-center>
+
+  <div class="logo">
+    <img src="assets/imgs/logo.png">
+    <h2 style="color:#ebebeb">Find Near Me</h2>
+    <p no-margin style="color:#ebebeb">Howdy, login to continue</p>
+  </div>
+
+  <div class="login_form">
+    <ion-list no-margin>
+
+      <ion-item no-lines no-padding>
+        <ion-input type="email" placeholder="Email address" value="" [(ngModel)]="userEmail" no-margin></ion-input>
+      </ion-item>
+
+      <ion-item no-lines no-padding>
+        <ion-input type="password" placeholder="Password" [(ngModel)]="userPassword" no-margin></ion-input>
+        
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <p style="color:#ebebeb">Forgot your password?</p>
+  <ion-button (click)="login()"  color="success" shape="round" expand="block" size="large">Login</ion-button>
+ 
+  <div class="loginSome">
+    <img src="assets/imgs/facebook.png" class="myBut"> 
+    <img src="assets/imgs/twitter.png" class="twBut">
+  </div>
+ 
+  <div class="create_account">
+    <p style="color:#ebebeb">No Account?</p>
+  </div>
+
+  <div class="create_account">
+      <ion-button expand="block" size="large" color="white" shape="round"  fill="outline" style="color:#ebebeb">Sign up</ion-button>
+  </div>
+    
+</ion-content>
