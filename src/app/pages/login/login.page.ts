@@ -1,7 +1,9 @@
+// Larisa Pyykölä, student number 1702357
 import { Component, OnInit } from '@angular/core';
 // imports for authentication
 import { AngularFireAuth } from '@angular/fire/auth';
 import { auth } from 'firebase/app';
+import {Router} from '@angular/router'; // added import of router
 
 import { ToastController } from '@ionic/angular';
 
@@ -13,13 +15,12 @@ import { ToastController } from '@ionic/angular';
 export class LoginPage implements OnInit {
 // variables for user email and password
 
-
 userEmail: string;
 userPassword: string;
-
+// message for the toast
 message: string;
 
-  constructor(public afAuth: AngularFireAuth, public toastController: ToastController) { }
+  constructor(public afAuth: AngularFireAuth, public toastController: ToastController, private router: Router) { }
   ngOnInit() {
   }
 
@@ -38,6 +39,7 @@ message: string;
       const res = await this.afAuth.auth.signInWithEmailAndPassword(userEmail, userPassword);
       this. message = 'You are logged in';
       this.presentToast(this.message);
+      this.router.navigate (['tabs']); // if logged in - navigates to tabs page
     } catch (err) {
       console.dir(err);
       if (err.code === 'auth/user-not-found') {

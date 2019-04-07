@@ -1,9 +1,31 @@
+<!--Larisa Pyylölä, student number 1702357-->
 <ion-header>
   <ion-toolbar>
     <ion-title>register</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="login_register" padding text-center>
+    <div class="login_form">
+      <ion-list  no-margin>
+  
+        <ion-item no-lines no-padding>
+          <ion-input type="email" placeholder="Email address" value="" no-margin [(ngModel)]="userEmail"></ion-input>
+        </ion-item>
 
+        <ion-item no-lines no-padding>
+          <ion-input type="password" placeholder="Password" no-margin [(ngModel)]="userPassword" ></ion-input>
+        </ion-item>
+
+        <ion-item no-lines no-padding>
+            <ion-input type="password" placeholder="Confirm Password" [(ngModel)]="cuserPassword" no-margin></ion-input>
+          </ion-item>
+
+      </ion-list>
+      <ion-button  color="secondary" expand="block" shape="round" (click)="register()">Sign up</ion-button>
+    </div>
+    
+    <div class="create_account">
+      <ion-button expand="block" shape="round" routerLink="/login" text-uppercase clear>Back</ion-button>
+    </div>
 </ion-content>
