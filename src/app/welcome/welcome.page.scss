@@ -1,0 +1,15 @@
+// Larisa Pyykölä, student number 1702357
+// addded styles to slides, so they take 100% of page width and height
+ion-slides {
+    height: 100% !important;
+    width:100% ;
+
+	ion-slide { // put all elements in one column and align to centre
+		align-items: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1em;
+	}
+}//test

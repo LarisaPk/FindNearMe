@@ -1,0 +1,53 @@
+<!--Larisa Pyykölä, student number 1702357-->
+
+<!--Auto generated code
+
+  <ion-header>
+  <ion-toolbar>
+    <ion-title>welcome</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content>
+
+-->
+<ion-slides pager="true"> <!--added modifications here. see https://ionicframework.com/docs/api/slides-->
+
+<!-- This is first slider -->
+<ion-slide style="background-color: #41c6f1">
+  <fa-icon [icon]="['fas', 'globe-europe']" size ="5x"></fa-icon>
+  <h1 style="color: #ebebeb">Howdy, looking for any place?</h1>
+  <p style="font-family:open-sans; font-size:14px; color:#ebebeb">Find Near Me helps on your <b>own</b> terms, <i>anywhere in the world!</i>.</p>
+</ion-slide>
+
+<!-- This is second slider -->
+<ion-slide style="background-color: #8BC34A ">
+    <fa-icon [icon]="['fas', 'grin-hearts']" size ="5x"></fa-icon>
+    <h1 style="color: #ebebeb"> Movie Theater, Tourist Place or Lovers Point!!! Hmmm...</h1>
+    <p style="font-family:open-sans; font-size:14px; color: #ebebeb">Catch-up any place <b>with</b> your own <i>desired root!</i>.</p>
+  </ion-slide>
+
+<!-- This is third lider -->
+  <ion-slide style="background-color: #FF9800">
+    <fa-icon [icon]="['fas', 'utensils']" size ="5x"></fa-icon>
+    <h1 style="color: #ebebeb"> Restaurants, Grocery Stores, Hospitals, Toilets  </h1>
+    <p style="font-family:open-sans; font-size:14px; color: #ebebeb">Ask <b>any</b> help, <b>Find Near Me</b> works on your <i>any device</i>!</p>
+  </ion-slide>
+
+<!-- This is final slider uses BG IMAGE for backgroud image later on at welcome.scss-->
+  <ion-slide class="bg-image">
+    <h1 style="color:#ebebeb">Welcome to Find Near Me!</h1>
+    <h4 style="color:#ebebeb">Your Personal Companion</h4>
+    <h2 class="padding" style="font-family:open-sans; font-size:14px; color:#ebebeb">
+      Anytime, Anywhere, Together
+    </h2>
+
+<!--Button to continue -->
+    <div style="position:absolute; bottom: 120px; text-align:center; z-index:1000; width:100%">
+      <ion-button  shape="round"  fill="outline">Let's Go!</ion-button>
+    </div>
+  </ion-slide>
+
+</ion-slides>

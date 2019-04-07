@@ -1,3 +1,4 @@
+<!--Larisa Pyykölä, student number 1702357-->
 <ion-header>
   <ion-toolbar>
     <ion-title>
@@ -6,4 +7,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+<!--added few icons from font awesome to test-->
+  <ion-list lines="full">
+    <ion-item>
+      Test icon <fa-icon [icon]="['fas', 'ice-cream']" size ="3x" slot="end"></fa-icon>
+    </ion-item>
+
+    <ion-item>
+      Test icon <fa-icon [icon]="['fas', 'pizza-slice']" [spin]="true" slot="end"></fa-icon>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>

@@ -1,3 +1,4 @@
+// Larisa Pyykölä, student number 1702357
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
@@ -74,4 +75,26 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+
+// adding font to the app
+@font-face {
+  font-family: 'Open-Sans';
+  font-style: normal; //if more styles needed - specify them later
+  src: url('../assets/fonts/Open_Sans/OpenSans-Regular.ttf');//path to the font file. only regular font is used for now
+}
+//apply font to the whole app
+* {
+  font-family: 'Open-Sans';
+}
+
+// adding font to the app
+@font-face {
+  font-family: 'Baloo-Bhai';
+  font-style: normal; //if more styles needed - specify them later
+  src: url('../assets/fonts/Baloo_Bhai/BalooBhai-Regular.ttf');//path to the font file.
+}
+//apply font to the whole app (this overwrites the previous one)
+* {
+  font-family: 'Baloo-Bhai';
 }
