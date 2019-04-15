@@ -1,6 +1,26 @@
 /*Larisa Pyykölä, student number 1702357*/
 
-/*style for the active item in the side menu*/
+/*style for the active item in the side menu
+*not used anymore
+*was needed in earlier version
 .active-item {
     border-left: 8px solid var(--ion-color-primary);
+}
+*/
+
+/*stylinf for the active item in the menu*/
+.active{
+--ion-text-color: var(--ion-color-primary);
+    ion-icon {
+        --ion-text-color-rgb: var(--ion-color-primary);
+    }
+}
+/*stylinf for the parent item in the menu*/
+.active-parent{
+    font-weight: 600;
+}
+/*stylinf for sub-item in the menu*/
+.sub-item{
+    padding-left: 20px;
+    font-size: small;
 }

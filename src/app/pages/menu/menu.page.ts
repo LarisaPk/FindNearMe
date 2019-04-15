@@ -12,15 +12,27 @@ import { AngularFireAuth } from '@angular/fire/auth';
   styleUrls: ['./menu.page.scss'],
 })
 export class MenuPage implements OnInit {
-// added array of pages here
+// added array of pages here and added children of the Second Page
   pages = [
     {
     title: 'First page',
-    url: '/menu/first'
+    url: '/menu/first',
+    icon : 'home'
     },
     {
       title: 'Second page',
-      url: '/menu/second'
+      children: [
+        {
+          title: 'First Subcategory',
+          url: '/menu/subcategory1',
+          icon : 'pin'
+        },
+        {
+          title: 'Second Subcategory',
+          url: '/menu/subcategory2',
+          icon : 'rocket'
+        }
+      ]
       }
    ];
   selectedPath = '';

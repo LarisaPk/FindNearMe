@@ -20,6 +20,14 @@ const routes: Routes = [
       {
         path: 'second',
         loadChildren: '../second/second.module#SecondPageModule'
+      },
+      {
+        path: 'subcategory1',
+        loadChildren: '../subcategory1/subcategory1.module#Subcategory1PageModule'
+      },
+      {
+        path: 'subcategory2',
+        loadChildren: '../subcategory2/subcategory2.module#Subcategory2PageModule'
       }
     ]
   }
