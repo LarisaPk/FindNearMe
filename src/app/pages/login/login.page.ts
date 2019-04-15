@@ -23,7 +23,7 @@ message: string;
   constructor(public afAuth: AngularFireAuth, public toastController: ToastController, private router: Router) { }
   ngOnInit() {
   }
-
+  // show toast message
   async presentToast(message) {
     const toast = await this.toastController.create({
       message: message,
@@ -31,15 +31,15 @@ message: string;
     });
     toast.present();
   }
-
-  async login() { // function for the user identification
+  // function for the user identification
+  async login() {
     const {userEmail, userPassword} = this;
 
     try {
       const res = await this.afAuth.auth.signInWithEmailAndPassword(userEmail, userPassword);
       this. message = 'You are logged in';
       this.presentToast(this.message);
-      this.router.navigate (['tabs']); // if logged in - navigates to tabs page
+      this.router.navigate (['menu', 'first']); // if logged in - navigates to menu
     } catch (err) {
       console.dir(err);
       if (err.code === 'auth/user-not-found') {
