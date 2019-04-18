@@ -1,6 +1,8 @@
 {
   "name": "FindNearMe",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "703bd991"
 }
